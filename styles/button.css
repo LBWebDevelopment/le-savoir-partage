@@ -1,0 +1,77 @@
+button {
+  display: inline-flex;
+  padding: 0.75rem 2rem;
+  align-items: center;
+  gap: 0.75rem;
+
+  border: 0;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-weight: bold;
+  font-size: inherit;
+  outline: none;
+
+  transition: border-radius 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button .icon-in-button {
+  width: 24px;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button.button-primary {
+  background-color: var(--primary);
+  color: var(--text-on-dark);
+}
+
+button.button-primary svg {
+  transition: transform 0.3s ease;
+}
+
+button.button-primary:hover svg {
+  transform: rotate(90deg);
+}
+
+button.button-primary svg path {
+  fill: var(--text-on-dark);
+}
+
+button.loading svg path {
+  fill: none;
+}
+
+button.loading:hover svg path {
+  fill: none;
+}
+
+button.loading svg {
+  border-radius: 0.325rem 0.325rem 0.325rem 0.325rem;
+  animation: spin 1s ease infinite;
+}
+
+button.button-primary.loading svg {
+  background-color: var(--text-on-dark);
+
+  transition: border-radius 0.3s ease, background-color 0.3s ease;
+}
+
+button.button-primary.loading:hover svg {
+  border-radius: 0.325rem 0.325rem 0.325rem 0.325rem;
+  background-color: var(--primary);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
