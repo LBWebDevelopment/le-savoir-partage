@@ -1,0 +1,148 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  background-color: var(--background-light);
+  color: var(--text-on-light);
+}
+
+header nav {
+  display: flex;
+  padding: 1.5rem max(4vw, var(--minimum-padding));
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header nav .mobile-header svg path {
+  fill: var(--text-on-light);
+}
+
+header nav .menu {
+  display: flex;
+  gap: 4rem;
+}
+
+header nav .menu li {
+  list-style: none;
+  white-space: nowrap;
+}
+
+header nav .menu li .link {
+  color: var(--text-on-light);
+}
+
+header nav .menu li .link:hover {
+  color: var(--text-on-light);
+  z-index: 0;
+}
+
+/* Responsive */
+
+header nav .menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Hide the cross icon initially */
+header nav .menu-toggle .cross-icon {
+  display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Hide the menu items */
+  header nav .menu {
+    display: none;
+  }
+
+  header nav.mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: calc(
+      100vh - 48px
+    ); /* height of visual : full height - height of header */
+  }
+
+  header nav .menu.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 2rem;
+    gap: 3rem;
+  }
+
+  /* Show a toggle button for the menu on small screens */
+  header nav .menu-toggle {
+    display: block;
+  }
+
+  /* Menu toggle animation */
+  .menu-toggle {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+  }
+  .menu-toggle span {
+    margin: 0 auto;
+    position: relative;
+    top: 12px;
+    transition-duration: 0s;
+    transition-delay: 0.2s;
+    transition: background-color 0.1s ease;
+  }
+  .menu-toggle span:before,
+  .menu-toggle span:after {
+    position: absolute;
+    content: "";
+  }
+  .menu-toggle span,
+  .menu-toggle span:before,
+  .menu-toggle span:after {
+    width: 40px;
+    height: 4px;
+    border-radius: 1px 1px 1px 1px;
+    background-color: var(--text-on-light);
+    display: block;
+    opacity: 1;
+  }
+  .menu-toggle span:before {
+    margin-top: -12px;
+    transition-property: margin, transform;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s, 0;
+  }
+  .menu-toggle span:after {
+    margin-top: 12px;
+    transition-property: margin, transform;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s, 0;
+  }
+
+  .menu-toggle.active span {
+    background-color: var(--background-dark);
+    transition: 0.1s background-color ease;
+  }
+  .menu-toggle.active span:before {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition-delay: 0, 0.3s;
+  }
+  .menu-toggle.active span:after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition-delay: 0, 0.3s;
+  }
+}

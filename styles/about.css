@@ -1,0 +1,13 @@
+#about {
+  background-color: var(--background-light);
+  color: var(--text-on-light);
+}
+
+#about .about-content {
+  display: flex;
+  gap: 4rem;
+}
+
+#about .about-content .about-image {
+  width: 100vw;
+}

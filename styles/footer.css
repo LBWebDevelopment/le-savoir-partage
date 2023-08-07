@@ -1,0 +1,51 @@
+footer {
+  display: flex;
+  padding: 1.5rem max(4vw, var(--minimum-padding));
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  background: var(--background-dark);
+  color: var(--text-on-dark);
+}
+
+footer #contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+footer #contact-info #lbwd-info {
+  display: flex;
+  gap: 1rem;
+}
+
+footer #contact-info #lbwd-info #address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+footer .social-network-icon svg path {
+  fill: var(--text-on-dark);
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  footer #contact-info {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  footer #contact-info #lbwd-info #address {
+    gap: 0.5rem;
+  }
+}

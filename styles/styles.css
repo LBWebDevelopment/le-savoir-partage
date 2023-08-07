@@ -1,0 +1,47 @@
+:root {
+  /* colors */
+  --primary: #FA1833;
+  --background-dark: #530811;
+  --text-on-dark: #F8F0EE;
+  --background-light: #F8F0EE;
+  --text-on-light: #140103;
+  --paper-light: #FCF9F8;
+
+  /* spacing */
+  --minimum-padding: 2rem;
+  --content-width-padding: max(8vw, var(--minimum-padding));
+  --content-height-padding: 8rem;
+  --content-mobile-height-padding: 4rem;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  margin: 0;
+
+  background-color: var(--background-dark);
+}
+
+.logo img {
+  width: 48px;
+}
+
+section {
+  padding: var(--content-height-padding) var(--content-width-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  min-height: 60vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding-top: var(--content-mobile-height-padding);
+    padding-bottom: var(--content-mobile-height-padding);
+  }
+}

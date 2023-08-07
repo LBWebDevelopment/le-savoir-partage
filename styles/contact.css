@@ -1,0 +1,12 @@
+#contact {
+  background-color: var(--background-light);
+  color: var(--text-on-light);
+}
+
+#contact .contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}

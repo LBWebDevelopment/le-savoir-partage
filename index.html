@@ -1,9 +1,192 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Le Savoir Partagé</title>
-   </head>
-   <body>
-      <h1>Le Savoir Partagé</h1>
-   </body>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Savoir Partagé</title>
+    <link rel="icon" href="assets/logo/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/pricing.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/form-input.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/typography.css">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="mobile-header">
+            <a class="logo" href="">
+                <img src="assets/logo/logo.svg" alt="Logo Le Savoir Partagé">
+            </a>
+            <div class="menu-toggle" id="menu-toggle"><span></span></div>
+        </div>
+        <ul class="menu">
+            <li><a href="#hero" class="link">Accueil</a></li>
+            <li><a href="#activities" class="link">Activités</a></li>
+            <li><a href="#about" class="link">Histoire</a></li>
+            <li><a href="#pricing" class="link">Tarifs</a></li>
+            <li><a href="#contact" class="link">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="content">
+
+    <section id="hero">
+        <div id="hero-content">
+            <div id="hero-title">
+                <h1>
+                    <span id="hero-title-above">LE SAVOIR</span><br/>
+                    <span id="hero-title-below">PARTAGÉ</span>
+                </h1>
+            </div>
+            <h4 id="hero-subtitle">
+                Le savoir de chacun, partagé avec tous<br/>
+                Espace de vie sociale
+            </h4>
+
+            <a href="#activities">
+                <button class="button-primary">
+                    Découvrir les activités
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12.5 4.86926L11.09 6.27926L16.67 11.8693H4.5V13.8693H16.67L11.09 19.4593L12.5 20.8693L20.5 12.8693L12.5 4.86926Z"/>
+                    </svg>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <section id="activities">
+        <div class="activities-content">
+            <h2>Activités</h2>
+            <div class="card">
+                <img src="assets/images/activities/image1.jpg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Card Title 1</h3>
+                    <div class="card-info">
+                        <div class="card-info-item">
+                            <svg>...</svg>
+                            <p>Date</p>
+                        </div>
+                        <div class="card-info-item">
+                            <svg>...</svg>
+                            <p>Horaires</p>
+                        </div>
+                        <div class="card-info-item">
+                            <svg>...</svg>
+                            <p>Prix</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Histoire</h2>
+        <div class="about-content">
+            <div id="about-paragraph">
+                <p>Fondée en mars 1994 par Odile Mousseigt, l'association a pour but d'aider les enfants en difficultés
+                    dans leur scolarité. Intervenant à la sortie de l'école pour accompagner les enfants dans leurs
+                    devoirs, Le Savoir Partagé a vite été identifié comme une passerelle entre le temps scolaire et la
+                    famille.
+                    Durant ces 20 dernières années, le nombre de familles reçues et la diversité des personnes la
+                    fréquentant a fait évoluer l'association.
+                </p>
+                <p>
+                    Aujourd'hui elle n'intervient plus seulement auprès des enfants mais aussi auprès des familles, des
+                    adolescents, des personnes-âgées, des personnes en situation de précarité, des personnes étrangères
+                    arrivant sur le territoire français, etc.
+                    Par la diversité de ses actions, l'association est ouverte à tous !
+                    Elle bénéficie de l'agrément Espace de Vie Sociale, délivré par la Caf des Pyrénées Atlantiques.
+                </p>
+            </div>
+            <img class="about-image" src="about_image.jpg" alt="About Image">
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Tarifs</h2>
+
+        <div class="pricing-content">
+            <div class="pricing-card">
+                <div class="pricing-card-head">
+                    <h3>Sans adhésion</h3>
+                </div>
+                <ul>
+                    <li>
+                        <span>Solution web personnalisée</span> Gratuit
+                    </li>
+                    <li>
+                        <span>Maintenance récurrente</span> 2 €
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-content">
+            <div class="left-column">
+                <img src="assets/logo/logo.svg" alt="Logo">
+                <div class="contact-item">
+                    <svg>...</svg>
+                    <p>Adresse</p>
+                </div>
+                <div class="contact-item">
+                    <svg>...</svg>
+                    <p>Téléphone</p>
+                </div>
+                <div class="contact-item">
+                    <svg>...</svg>
+                    <p>Email</p>
+                </div>
+                <div class="contact-item">
+                    <svg>...</svg>
+                    <p>Facebook</p>
+                </div>
+            </div>
+            <div class="right-column">
+                <h3>Horaires d'ouverture</h3>
+                <div class="opening-hours">
+                    <p>Lundi: Horaires</p>
+                    <p>Mardi: Horaires</p>
+                    <!-- Add more days and hours as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div id="contact-info">
+        <a class="logo" href="">
+            <img src="assets/logo/logo.svg" alt="Logo Le Savoir Partagé">
+        </a>
+        <p>&copy; 2023 Lucas Batier. All rights reserved.</p>
+        <div id="social-network-content">
+            <a class="social-network-icon" href="https://www.linkedin.com/in/lucasbat" target="_blank"
+               rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path
+                            d="M31.6667 5C32.5507 5 33.3986 5.35119 34.0237 5.97631C34.6488 6.60143 35 7.44928 35 8.33333V31.6667C35 32.5507 34.6488 33.3986 34.0237 34.0237C33.3986 34.6488 32.5507 35 31.6667 35H8.33333C7.44928 35 6.60143 34.6488 5.97631 34.0237C5.35119 33.3986 5 32.5507 5 31.6667V8.33333C5 7.44928 5.35119 6.60143 5.97631 5.97631C6.60143 5.35119 7.44928 5 8.33333 5H31.6667ZM30.8333 30.8333V22C30.8333 20.559 30.2609 19.177 29.2419 18.1581C28.223 17.1391 26.841 16.5667 25.4 16.5667C23.9833 16.5667 22.3333 17.4333 21.5333 18.7333V16.8833H16.8833V30.8333H21.5333V22.6167C21.5333 21.3333 22.5667 20.2833 23.85 20.2833C24.4688 20.2833 25.0623 20.5292 25.4999 20.9668C25.9375 21.4043 26.1833 21.9978 26.1833 22.6167V30.8333H30.8333ZM11.4667 14.2667C12.2093 14.2667 12.9215 13.9717 13.4466 13.4466C13.9717 12.9215 14.2667 12.2093 14.2667 11.4667C14.2667 9.91667 13.0167 8.65 11.4667 8.65C10.7196 8.65 10.0032 8.94675 9.47498 9.47498C8.94675 10.0032 8.65 10.7196 8.65 11.4667C8.65 13.0167 9.91667 14.2667 11.4667 14.2667ZM13.7833 30.8333V16.8833H9.16667V30.8333H13.7833Z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+</body>
+
 </html>
