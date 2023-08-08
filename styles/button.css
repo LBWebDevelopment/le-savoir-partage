@@ -6,7 +6,6 @@ button {
 
   border: 0;
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-  font-weight: bold;
   font-size: inherit;
   outline: none;
 
@@ -28,7 +27,7 @@ button[disabled] {
 
 button.button-primary {
   background-color: var(--primary);
-  color: var(--text-on-dark);
+  color: var(--text-on-primary);
 }
 
 button.button-primary svg {
@@ -40,7 +39,7 @@ button.button-primary:hover svg {
 }
 
 button.button-primary svg path {
-  fill: var(--text-on-dark);
+  fill: var(--text-on-primary);
 }
 
 button.loading svg path {
@@ -57,7 +56,7 @@ button.loading svg {
 }
 
 button.button-primary.loading svg {
-  background-color: var(--text-on-dark);
+  background-color: var(--text-on-primary);
 
   transition: border-radius 0.3s ease, background-color 0.3s ease;
 }
@@ -73,5 +72,13 @@ button.button-primary.loading:hover svg {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Hide the menu items */
+  button {
+    justify-content: center;
+    width: 100%;
   }
 }
