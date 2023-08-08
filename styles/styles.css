@@ -1,6 +1,8 @@
 :root {
   /* colors */
-  --primary: #FA1833;
+  --primary: #FAD40F;
+  --text-on-primary: #140103;
+  --secondary: #FA1833;
   --background-dark: #530811;
   --text-on-dark: #F8F0EE;
   --background-light: #F8F0EE;
@@ -23,7 +25,7 @@ body {
 }
 
 .logo img {
-  width: 48px;
+  height: 40px;
 }
 
 section {
