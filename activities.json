@@ -1,0 +1,17 @@
+[
+  { // weekly recurring
+    "title": "Dé à coudre",
+    "image": "https://media.istockphoto.com/id/173682323/fr/photo/jeu-de-d%C3%A9s.jpg?s=612x612&w=0&k=20&c=jp2RcP9JOIyipxIBQYSruRIecUiFrXramcgoEcNsM_w=",
+    "price": 2,
+    "day_of_week": "tuesday",
+    "start_time": null,
+    "end_time": null
+  },
+  { // one time
+    "title": "Cours de Français, Langues Étrangère",
+    "image": "https://media.istockphoto.com/id/187169448/fr/photo/globe-avec-les-drapeaux-du-monde.jpg?s=612x612&w=0&k=20&c=XRNAcA8hYLGAwYfDZ6_yBzWoapyxsf92zheUEf1Rlcg=",
+    "price": 3,
+    "start_datetime": "2023-09-12T08:00:00",
+    "end_datetime": "2023-09-12T09:00:00"
+  }
+]
