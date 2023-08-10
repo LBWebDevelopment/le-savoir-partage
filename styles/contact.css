@@ -1,6 +1,6 @@
 #contact {
-  background-color: var(--background-light);
-  color: var(--text-on-light);
+  background-color: var(--background-dark);
+  color: var(--text-on-dark);
 }
 
 #contact .contact-content {
