@@ -1,0 +1,71 @@
+#activities {
+    background-color: var(--background-light);
+    color: var(--text-on-light);
+}
+
+#activities .activities-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#activities .activities-content .activity-card {
+    display: flex;
+    background-color: var(--paper-light);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 0.25rem 1rem 0px rgba(0, 0, 0, 0.13);
+}
+
+#activities .activities-content .activity-card .activity-card-image {
+    background-size: cover;
+    background-position: center;
+    color: rgba(0, 0, 0, 0);
+    width: 25%;
+    max-width: 200px;
+    aspect-ratio: 1;
+}
+
+#activities .activities-content .activity-card .activity-card-content {
+    padding: 2rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#activities .activities-content .activity-card .activity-card-content h5 {
+    margin: 0;
+}
+
+#activities .activities-content .activity-card  .activity-card-content .activity-card-info {
+    display: flex;
+    gap: 1rem;
+}
+
+#activities .activities-content .activity-card  .activity-card-content .activity-card-info .activity-card-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+#activities .activities-content .activity-card  .activity-card-content .activity-card-info .activity-card-info-item p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #activities .activities-content .activity-card {
+        flex-direction: column;
+    }
+    #activities .activities-content .activity-card .activity-card-image {
+        aspect-ratio: 2;
+        width: 100%;
+        max-width: none;
+    }
+
+    #activities .activities-content .activity-card .activity-card-content .activity-card-info {
+        justify-content: space-between;
+    }
+}
