@@ -1,6 +1,6 @@
 #about {
-  background-color: var(--background-light);
-  color: var(--text-on-light);
+  background-color: var(--background-dark);
+  color: var(--text-on-dark);
 }
 
 #about .about-content {
@@ -9,5 +9,19 @@
 }
 
 #about .about-content .about-image {
-  width: 100vw;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  #about .about-content {
+    flex-direction: column;
+  }
+
+  #about .about-content .about-image {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
 }
