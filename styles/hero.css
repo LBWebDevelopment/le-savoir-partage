@@ -6,8 +6,6 @@
             100vh - 2rem - 40px
     ); /* height of visual : full height - height of header */
     gap: 0;
-    position: relative;
-    overflow: hidden;
 }
 
 #hero #hero-content {
