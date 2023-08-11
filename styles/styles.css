@@ -35,6 +35,9 @@ section {
   gap: 2rem;
 
   min-height: 60vh;
+  
+  position: relative;
+  overflow: hidden;
 }
 
 a {
