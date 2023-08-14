@@ -1,3 +1,43 @@
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url('../assets/fonts/MPLUSRounded1c-Thin.ttf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url('../assets/fonts/MPLUSRounded1c-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url('../assets/fonts/MPLUSRounded1c-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url('../assets/fonts/MPLUSRounded1c-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url('../assets/fonts/MPLUSRounded1c-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url('../assets/fonts/MPLUSRounded1c-ExtraBold.ttf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url('../assets/fonts/MPLUSRounded1c-Black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Margarine';
+  src: url('../assets/fonts/Margarine-Regular.ttf');
+}
+
 :root {
   /* colors */
   --primary: #FAD40F;
@@ -14,14 +54,16 @@
   --content-width-padding: max(8vw, var(--minimum-padding));
   --content-height-padding: 8rem;
   --content-mobile-height-padding: 4rem;
+
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 
   margin: 0;
 
-  background-color: var(--background-dark);
+  background-color: var(--background-light);
 }
 
 .logo img {
@@ -42,6 +84,7 @@ section {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 @media screen and (max-width: 768px) {

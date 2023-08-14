@@ -7,14 +7,15 @@
     <title>Le Savoir Partagé</title>
     <link rel="icon" href="assets/logo/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/typography.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/services.css">
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/pricing.css">
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/button.css">
-    <link rel="stylesheet" href="styles/typography.css">
 </head>
 
 <body>
@@ -198,19 +199,24 @@
         <h2>Histoire</h2>
         <div class="about-content">
             <div id="about-paragraph">
-                <p>Fondée en mars 1994 par Odile Mousseigt, l'association a pour but d'aider les enfants en difficultés
+                <p>Fondée en mars <strong>1994</strong> par <strong>Odile Mousseigt</strong>, l'association a pour but
+                    d'aider les enfants en difficultés
                     dans leur scolarité. Intervenant à la sortie de l'école pour accompagner les enfants dans leurs
-                    devoirs, Le Savoir Partagé a vite été identifié comme une passerelle entre le temps scolaire et la
+                    devoirs, <strong>Le Savoir Partagé</strong> a vite été identifié comme une passerelle entre le temps
+                    scolaire et la
                     famille.
                     Durant ces 20 dernières années, le nombre de familles reçues et la diversité des personnes la
                     fréquentant a fait évoluer l'association.
                 </p>
                 <p>
-                    Aujourd'hui elle n'intervient plus seulement auprès des enfants mais aussi auprès des familles, des
-                    adolescents, des personnes-âgées, des personnes en situation de précarité, des personnes étrangères
+                    Aujourd'hui elle n'intervient plus seulement auprès des <strong>enfants</strong> mais aussi auprès
+                    des <strong>familles</strong>, des
+                    <strong>adolescents</strong>, des <strong>personnes-âgées</strong>, des personnes en situation de
+                    <strong>précarité</strong>, des personnes <strong>étrangères</strong>
                     arrivant sur le territoire français, etc.
-                    Par la diversité de ses actions, l'association est ouverte à tous !
-                    Elle bénéficie de l'agrément Espace de Vie Sociale, délivré par la Caf des Pyrénées Atlantiques.
+                    Par la diversité de ses actions, l'association est <strong>ouverte à tous</strong> !
+                    Elle bénéficie de l'agrément <strong>Espace</strong> de <strong>Vie Sociale</strong>, délivré par la
+                    Caf des Pyrénées Atlantiques.
                 </p>
             </div>
             <div class="about-image">
@@ -221,7 +227,6 @@
 
     <section id="pricing">
         <h2>Tarifs</h2>
-
         <div class="pricing-content">
             <div class="pricing-card">
                 <div class="pricing-card-head">
@@ -229,10 +234,47 @@
                 </div>
                 <ul>
                     <li>
-                        <span>Solution web personnalisée</span> Gratuit
+                        <span class="pricing-card-list-item-description">
+                            1ère activité découverte
+                        </span><span class="pricing-card-list-item-price">Gratuit</span>
                     </li>
                     <li>
-                        <span>Maintenance récurrente</span> 2 €
+                        <span class="pricing-card-list-item-description">
+                            Toute activité individuelle
+                        </span>
+                        <span class="pricing-card-list-item-price">5 €</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-card-head">
+                    <h3>Adhésion anuelle</h3>
+                </div>
+                <ul>
+                    <li>
+                        <span class="pricing-card-list-item-description">
+                            1 personne
+                        </span>
+                        <span class="pricing-card-list-item-price">15 €</span>
+                    </li>
+                    <li>
+                        <span class="pricing-card-list-item-description">
+                            2 personne et plus
+                        </span>
+                        <span class="pricing-card-list-item-price">21 €</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-card-head">
+                    <h3>Carte 10 activités</h3>
+                </div>
+                <ul>
+                    <li>
+                        <span class="pricing-card-list-item-description">
+                            *Certaines activités uniquement
+                        </span>
+                        <span class="pricing-card-list-item-price">18 €</span>
                     </li>
                 </ul>
             </div>
@@ -242,31 +284,68 @@
     <section id="contact">
         <h2>Contact</h2>
         <div class="contact-content">
-            <div class="left-column">
+            <div class="contact-info">
                 <img width="128px" src="assets/logo/logo-le-savoir-partage-text-on-dark-in-column.svg" alt="Logo">
-                <div class="contact-item">
-                    <svg>...</svg>
-                    <p>Adresse</p>
-                </div>
-                <div class="contact-item">
-                    <svg>...</svg>
-                    <p>Téléphone</p>
-                </div>
-                <div class="contact-item">
-                    <svg>...</svg>
-                    <p>Email</p>
-                </div>
-                <div class="contact-item">
-                    <svg>...</svg>
-                    <p>Facebook</p>
-                </div>
+                <a class="contact-item" href="https://goo.gl/maps/Wf4DArzzA2z2vM7w6" target="_blank">
+                    <img src="assets/icons/Place.svg" alt="Send"/>
+                    <p>2 avenue Al Cartero<br/>64270 Salies de Béarn</p>
+                </a>
+                <a class="contact-item" href="tel:+33783164097">
+                    <img src="assets/icons/Phone.svg" alt="Send"/>
+                    <p>07 83 16 40 97</p>
+                </a>
+                <a class="contact-item" href="mailto:le-savoir-partage@orange.fr">
+                    <img src="assets/icons/Send.svg" alt="Send"/>
+                    <p>le-savoir-partage@orange.fr</p>
+                </a>
+                <a class="contact-item" href="https://www.facebook.com/savoirpartage64270" target="_blank">
+                    <img src="assets/icons/Facebook.svg" alt="Facebook Le Savoir Partagé"/>
+                    <p>Suivez-nous sur Facebook</p>
+                </a>
             </div>
-            <div class="right-column">
+            <div class="opening-hours">
                 <h3>Horaires d'ouverture</h3>
-                <div class="opening-hours">
-                    <p>Lundi: Horaires</p>
-                    <p>Mardi: Horaires</p>
-                    <!-- Add more days and hours as needed -->
+                <div class="opening-hours-list">
+                    <div class="opening-hours-list-item">
+                        <h6>
+                            Lundi
+                        </h6>
+                        <p>
+                            9h30 - 12h30 / 14h00 - 17h30
+                        </p>
+                    </div>
+                    <div class="opening-hours-list-item">
+                        <h6>
+                            Mardi
+                        </h6>
+                        <p>
+                            14h00 - 17h30
+                        </p>
+                    </div>
+                    <div class="opening-hours-list-item">
+                        <h6>
+                            Mercredi
+                        </h6>
+                        <p>
+                            9h30 - 12h30 / 14h00 - 17h30
+                        </p>
+                    </div>
+                    <div class="opening-hours-list-item">
+                        <h6>
+                            Jeudi
+                        </h6>
+                        <p>
+                            9h30 - 12h30 / 14h00 - 17h30
+                        </p>
+                    </div>
+                    <div class="opening-hours-list-item">
+                        <h6>
+                            Vendredi
+                        </h6>
+                        <p>
+                            14h00 - 17h00
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -274,24 +353,19 @@
 </div>
 
 <footer>
-    <div id="contact-info">
-        <a class="logo" href="">
-            <img src="assets/logo/logo-le-savoir-partage-text-on-dark.svg" alt="Logo Le Savoir Partagé">
+    <a class="logo" href="">
+        <img src="assets/logo/logo-le-savoir-partage-text-on-light.svg" alt="Logo Le Savoir Partagé">
+    </a>
+    <p>&copy; 2023 Lucas Batier. All rights reserved.</p>
+    <div id="social-network-content">
+        <a class="social-network-icon" href="https://www.facebook.com/savoirpartage64270" target="_blank"
+           rel="noopener noreferrer">
+            <img width="48px" src="assets/icons/Facebook-footer.svg" alt="Facebook Le Savoir Partagé"/>
         </a>
-        <p>&copy; 2023 Lucas Batier. All rights reserved.</p>
-        <div id="social-network-content">
-            <a class="social-network-icon" href="https://www.facebook.com/savoirpartage64270" target="_blank"
-               rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M10 6.98438H38C39.0609 6.98438 40.0783 7.4058 40.8284 8.15595C41.5786 8.90609 42 9.92351 42 10.9844V38.9844C42 40.0452 41.5786 41.0627 40.8284 41.8128C40.0783 42.5629 39.0609 42.9844 38 42.9844H10C8.93913 42.9844 7.92172 42.5629 7.17157 41.8128C6.42143 41.0627 6 40.0452 6 38.9844V10.9844C6 9.92351 6.42143 8.90609 7.17157 8.15595C7.92172 7.4058 8.93913 6.98438 10 6.98438ZM36 10.9844H31C29.1435 10.9844 27.363 11.7219 26.0503 13.0346C24.7375 14.3474 24 16.1279 24 17.9844V22.9844H20V28.9844H24V42.9844H30V28.9844H36V22.9844H30V18.9844C30 18.4539 30.2107 17.9452 30.5858 17.5702C30.9609 17.1951 31.4696 16.9844 32 16.9844H36V10.9844Z"/>
-                </svg>
-            </a>
-        </div>
     </div>
 </footer>
 
 <script src="script.js"></script>
-<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 </body>
 
 </html>
