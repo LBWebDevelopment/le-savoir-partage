@@ -8,13 +8,16 @@ button {
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
   font-size: 1.125rem;
   font-weight: bold;
+  font-family: inherit;
   outline: none;
 
-  transition: border-radius 0.3s ease, background-color 0.3s ease;
+  transition: border-radius 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
   cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.13);
+  transform: translateX(-0.0625rem) translateY(-0.0625rem);
 }
 
 button .icon-in-button {
@@ -41,45 +44,4 @@ button.button-primary:hover svg {
 
 button.button-primary svg path {
   fill: var(--text-on-primary);
-}
-
-button.loading svg path {
-  fill: none;
-}
-
-button.loading:hover svg path {
-  fill: none;
-}
-
-button.loading svg {
-  border-radius: 0.325rem 0.325rem 0.325rem 0.325rem;
-  animation: spin 1s ease infinite;
-}
-
-button.button-primary.loading svg {
-  background-color: var(--text-on-primary);
-
-  transition: border-radius 0.3s ease, background-color 0.3s ease;
-}
-
-button.button-primary.loading:hover svg {
-  border-radius: 0.325rem 0.325rem 0.325rem 0.325rem;
-  background-color: var(--primary);
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  /* Hide the menu items */
-  button {
-    justify-content: center;
-    width: 100%;
-  }
 }
