@@ -51,7 +51,7 @@
 
   /* spacing */
   --minimum-padding: 2rem;
-  --content-width-padding: max(8vw, var(--minimum-padding));
+  --content-width-padding: max(14vw, var(--minimum-padding));
   --content-height-padding: 8rem;
   --content-mobile-height-padding: 4rem;
 
