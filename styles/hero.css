@@ -47,17 +47,17 @@
 }
 
 #hero .circle:nth-child(2) {
-    right: -10.0625vw;
-    top: -2.96056vw;
-
-    background-color: var(--secondary);
-    filter: blur(18.75vw);
-}
-
-#hero .circle:nth-child(3) {
     right: -3.8125vw;
     bottom: -7.78944vw;
 
-    background: var(--primary);
+    background: var(--secondary);
     filter: blur(21.875vw);
+}
+
+#hero .circle:nth-child(3) {
+    right: -10.0625vw;
+    top: -2.96056vw;
+
+    background-color: var(--primary);
+    filter: blur(18.75vw);
 }
