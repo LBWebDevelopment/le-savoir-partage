@@ -5,7 +5,7 @@ footer {
     justify-content: space-between;
     align-self: stretch;
 
-    background: var(--background-light);
+    background: var(--paper-light);
     color: var(--text-on-light);
 }
 

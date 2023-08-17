@@ -5,8 +5,8 @@ header {
     width: 100%;
     z-index: 999;
 
-    background-color: var(--background-light);
-    color: var(--text-on-light);
+    background-color: var(--paper-light);
+    color: var(--text-on-dark);
 }
 
 header nav {
