@@ -31,6 +31,7 @@
     padding: 2rem;
     gap: 2rem;
     display: flex;
+    width: 75%;
     flex-direction: column;
 }
 
