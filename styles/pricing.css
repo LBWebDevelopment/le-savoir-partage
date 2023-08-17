@@ -1,7 +1,3 @@
-#pricing {
-    background-color: var(--background-light);
-    color: var(--text-on-light);
-}
 
 #pricing .pricing-content {
     display: flex;
@@ -19,6 +15,7 @@
     align-self: stretch;
     border-radius: 1rem;
     background: var(--paper-light);
+    color: var(--text-on-light);
     box-shadow: 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.13);
 }
 

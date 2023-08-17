@@ -6,7 +6,6 @@
             100vh - 2rem - 40px
     ); /* height of visual : full height - height of header */
     gap: 0;
-    background-color: var(--background-dark);
 }
 
 #hero #hero-content {
@@ -27,37 +26,4 @@
 
 #hero #hero-title {
     height: 8rem;
-}
-
-#hero .circle {
-    width: 31.25vw;
-    height: 31.25vw;
-
-    position: absolute;
-
-    border-radius: 50%;
-}
-
-#hero .circle:nth-child(1) {
-    left: -8.8125vw;
-    top: -1.08556vw;
-
-    background-color: #8DEBB2;
-    filter: blur(21.875vw);
-}
-
-#hero .circle:nth-child(2) {
-    right: -3.8125vw;
-    bottom: -7.78944vw;
-
-    background: var(--secondary);
-    filter: blur(21.875vw);
-}
-
-#hero .circle:nth-child(3) {
-    right: -10.0625vw;
-    top: -2.96056vw;
-
-    background-color: var(--primary);
-    filter: blur(18.75vw);
 }
