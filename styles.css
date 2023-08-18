@@ -351,7 +351,7 @@ header nav .menu-toggle .cross-icon {
   margin-top: auto;
   margin-bottom: auto;
 
-  gap: 4vh;
+  gap: 6vh;
 
   display: flex;
   flex-direction: column;
@@ -362,7 +362,7 @@ header nav .menu-toggle .cross-icon {
 }
 
 #hero #hero-title {
-  height: 8rem;
+  height: 16rem;
 }
 
 /* Services Section */
