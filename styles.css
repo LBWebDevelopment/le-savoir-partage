@@ -696,6 +696,18 @@ header nav .menu-toggle .cross-icon {
         transition-delay: 0, 0.3s;
     }
 
+
+    /* About Section */
+    #about .about-content {
+        flex-direction: column;
+    }
+
+    #about .about-content .about-image {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
     /* Pricing Section */
     #pricing .pricing-content {
         flex-direction: column;
@@ -739,17 +751,6 @@ header nav .menu-toggle .cross-icon {
         display: grid;
         justify-items: center;
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* About Section */
-    #about .about-content {
-        flex-direction: column;
-    }
-
-    #about .about-content .about-image {
-        display: flex;
-        justify-content: center;
-        width: 100vw;
     }
 
     /* Contact Section */
