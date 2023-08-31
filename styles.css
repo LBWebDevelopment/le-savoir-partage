@@ -696,7 +696,6 @@ header nav .menu-toggle .cross-icon {
         transition-delay: 0, 0.3s;
     }
 
-
     /* About Section */
     #about .about-content {
         flex-direction: column;
@@ -707,7 +706,7 @@ header nav .menu-toggle .cross-icon {
         justify-content: center;
         width: 100vw;
     }
-
+  
     /* Pricing Section */
     #pricing .pricing-content {
         flex-direction: column;
