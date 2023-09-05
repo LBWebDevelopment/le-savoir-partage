@@ -201,23 +201,23 @@ a {
 }
 
 .logo-text .logo-text-above {
-    line-height: 5rem;
-    font-size: 5rem;
+    line-height: 4rem;
+    font-size: 4rem;
     font-weight: 900;
     text-transform: uppercase;
 }
 
 .logo-text .logo-text-below {
-    line-height: 6.5rem;
-    font-size: 6.5rem;
+    line-height: 5rem;
+    font-size: 5rem;
     font-family: 'Margarine', cursive;
     letter-spacing: 1rem;
     text-transform: uppercase;
 }
 
 .logo-text .logo-text-tagline {
-    line-height: 3rem;
-    font-size: 3rem;
+    line-height: 2rem;
+    font-size: 2rem;
     font-weight: 900;
     margin-top: 2rem;
     white-space: nowrap;
@@ -236,7 +236,7 @@ button {
 
     border: 0;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
     font-family: inherit;
     outline: none;
@@ -586,23 +586,23 @@ header nav .menu-toggle .cross-icon {
     }
 
     .logo-text .logo-text-above {
-        font-size: 3.5rem;
-        line-height: 3.5rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
         font-weight: 900;
         text-transform: uppercase;
     }
 
     .logo-text .logo-text-below {
-        font-size: 4rem;
-        line-height: 4rem;
+        font-size: 3rem;
+        line-height: 3rem;
         font-family: 'Margarine', cursive;
-        letter-spacing: 1rem;
+        letter-spacing: 0.75rem;
         text-transform: uppercase;
     }
 
     .logo-text .logo-text-tagline {
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
     }
 
     /* Header Section */
